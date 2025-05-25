@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CubeTimer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><span class="blue">Cube</span>Timer</h1>
+      <div class="header-buttons">
+        <button id="resetBtn">Reset</button>
+        <button id="settingsBtn">Settings</button>
+      </div>
+    </header>
+    <main>
+      <div class="main-section">
+        <div class="left-section">
+          <div class="scramble-label">SCRAMBLE</div>
+          <div class="scramble" id="scramble">Scramble will appear here</div>
+          <div class="timer-display" id="timer">0.000</div>
+          <p class="instruction">Press and hold SPACE to start</p>
+          <div class="stats">
+            <div class="stat" id="ao5">CURRENT AO5<br><span>-</span></div>
+            <div class="stat" id="ao12">CURRENT AO12<br><span>-</span></div>
+            <div class="stat" id="sessionAvg">SESSION AVG<br><span>-</span></div>
+            <div class="stat" id="bestTime">BEST TIME<br><span>-</span></div>
+          </div>
+        </div>
+        <div class="solve-history">
+          <h2>Solve History</h2>
+          <ul id="historyList"></ul>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
